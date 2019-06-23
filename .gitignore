@@ -31,5 +31,5 @@ node_modules/
 .env
 .env.test
 
-# DB config.json
-./server/config.json
+# DB config.js
+server/models/config.json

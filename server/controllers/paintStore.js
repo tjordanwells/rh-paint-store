@@ -1,18 +1,18 @@
-const db = require('../models');
+const db = require("../models");
 
 module.exports = {
   getAll: (req, res) => {
-    let queryString = 'SELECT * FROM `ColorLibrary`';
+    let queryString = "SELECT * FROM `ColorLibrary`";
 
     db.query(queryString, (error, results) => {
-        if (error) {
+      if (error) {
         return res.json(error);
-        }
-        res.json(results);
+      }
+      res.json(results);
     });
   },
   getColorName: (req, res) => {
-    let queryString = 'SELECT * FROM `ColorLibrary` WHERE name = ?';
+    let queryString = "SELECT * FROM `ColorLibrary` WHERE name = ?";
     let color = req.params.name;
     console.log(color);
 
@@ -25,7 +25,7 @@ module.exports = {
     });
   },
   getHex: (req, res) => {
-    let queryString = 'SELECT * FROM `ColorLibrary` WHERE hex = ?';
+    let queryString = "SELECT * FROM `ColorLibrary` WHERE hex = ?";
     let hex = req.params.hex;
     console.log(hex);
 
@@ -36,8 +36,8 @@ module.exports = {
       res.json(results);
     });
   },
-  getVendor: (req, res) => {
-    let queryString = 'SELECT * FROM `ColorLibrary` WHERE vendorId = ?';
+  getVendorColors: (req, res) => {
+    let queryString = "SELECT * FROM `ColorLibrary` WHERE vendorId = ?";
     let vendor = req.params.vendorId;
     console.log(vendor);
 
@@ -49,7 +49,7 @@ module.exports = {
     });
   },
   getVendorName: (req, res) => {
-    let queryString = 'SELECT * FROM `ColorLibVendor`';
+    let queryString = "SELECT * FROM `ColorLibVendor`";
 
     db.query(queryString, (error, results) => {
       if (error) {
@@ -58,4 +58,4 @@ module.exports = {
       res.json(results);
     });
   }
-}
+};
