@@ -1,0 +1,24 @@
+{
+  "production": {
+    "username": "",
+    "password": "",
+    "database": "",
+    "host": "",
+    "port": 3306,
+    "dialect": "mysql",
+    "define": {
+      "timestamps": false
+    }
+  },
+  "development": {
+    "username": "root",
+    "password": "password",
+    "database": "test_db",
+    "host": "localhost",
+    "port": 3306,
+    "dialect": "mysql",
+    "define": {
+      "timestamps": false
+    }
+  }
+}
