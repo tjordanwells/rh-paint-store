@@ -4,7 +4,7 @@
 
 This app serves as a complete client-server system that reads data from a color library and displays the colors in a web interface. The color library has colors from a variety of paint vendors. The user interface includes the ability to select a paint vendor and view all the colors from the paint vendor.
 
-##### Demo the project at [HERE](https://rh-paint-store.herokuapp.com)
+#### Demo the project [HERE](https://rh-paint-store.herokuapp.com)
 
 ## PRELIMINARY
 
