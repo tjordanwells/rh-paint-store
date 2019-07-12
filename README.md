@@ -58,6 +58,8 @@ The server for your system will need to do the following at a minimal:
 
 2. The ability to show all colors from all vendors.
 
-3. Infinite scrolling in your display area.
+3. The ability to filter vendors within a selector.
 
-4. Search capability.
+4. Infinite scrolling in your display area. (Planned)
+
+5. Color Search capability. (Planned)
